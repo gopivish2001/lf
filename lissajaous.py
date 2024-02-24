@@ -11,6 +11,7 @@ def lissajous(t, A, B, a, b, delta):
     return x, y
 col1, col2 = st.columns(2)
 
+st.title(LISSAJOUS FIGURE)
 
 def draw_lissajous(A, B, a, b, delta):
 
