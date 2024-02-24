@@ -11,7 +11,7 @@ def lissajous(t, A, B, a, b, delta):
     return x, y
 col1, col2 = st.columns(2)
 
-st.title("LISSAJOUS FIGURE")
+
 
 def draw_lissajous(A, B, a, b, delta):
 
@@ -32,6 +32,7 @@ def draw_lissajous(A, B, a, b, delta):
 
     with col2:
 
+        st.title("LISSAJOUS FIGURE")
         plt.figure(figsize=(4, 2))
         plt.plot(t, x, 'r-', linewidth=2)
         plt.xlabel('Time', fontsize=14)
@@ -51,6 +52,7 @@ def draw_lissajous(A, B, a, b, delta):
 def main():
 
     st.markdown("---")
+    
     st.sidebar.write("## Enter Parameters:")
     A = st.sidebar.number_input("AMPLITUDE OF X WAVE", min_value=50, value=200)
     B = st.sidebar.number_input("AMPLITUDE OF Y WAVE", min_value=50, value=300)
