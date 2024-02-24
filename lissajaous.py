@@ -69,6 +69,11 @@ def main():
     delta = st.sidebar.number_input("PHASE DIFFERENCE", min_value=0.0, max_value=2*np.pi, value=np.pi/2)
     st.markdown("---")
     draw_lissajous(A, B, a, b, delta)
+
+st.subheader("Application of lissajous figure?")
+multi='''e Lissajou figures are used to determine the unknown frequency by comparing it with the known frequency. 
+Verifying audio oscillator with a known-frequency signal. Monitoring audio amplifiers and feedback networks for phase shift'''
+st.markdown(multi)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 if __name__ == "__main__":
     main()
