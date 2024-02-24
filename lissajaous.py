@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Set page config to wide mode
 st.set_page_config(layout="wide")
-
+st.title("LISSAJOUS FIGURE")
 def lissajous(t, A, B, a, b, delta):
     x = A * np.sin(a * t)
     y = B * np.sin(b * t + delta)
@@ -32,7 +32,7 @@ def draw_lissajous(A, B, a, b, delta):
 
     with col2:
 
-        st.title("LISSAJOUS FIGURE")
+       
         plt.figure(figsize=(4, 2))
         plt.plot(t, x, 'r-', linewidth=2)
         plt.xlabel('Time', fontsize=14)
