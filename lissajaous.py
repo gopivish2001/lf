@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 st.title("LISSAJOUS FIGURE:-")
 st.text('any of an infinite variety of curves formed by combining two mutually perpendicular simple harmonic motions, 
-        commonly exhibited by the oscilloscope, and used in studying frequency, amplitude, and phase relations of harmonic variables.')
+        \ncommonly exhibited by the oscilloscope, and used in studying frequency, amplitude, and phase relations of harmonic variables.')
 def lissajous(t, A, B, a, b, delta):
     x = A * np.sin(a * t)
     y = B * np.sin(b * t + delta)
