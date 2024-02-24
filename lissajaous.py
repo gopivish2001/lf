@@ -5,11 +5,14 @@ import matplotlib.pyplot as plt
 # Set page config to wide mode
 st.set_page_config(layout="wide")
 st.header(':blue[LISSAJOUS FIGURE]', divider='rainbow')
-text="**DEFINITION:-** Any of an infinite variety of curves formed by combining two mutually perpendicular simple harmonic motions,\ncommonly exhibited by the oscilloscope, and used in studying frequency, amplitude, and phase relations of harmonic variables."
-st.text(text)
+multi ='''**DEFINITION:-** Any of an infinite variety of curves formed by combining two mutually perpendicular simple harmonic motions,
+commonly exhibited by the oscilloscope, and used in studying frequency, amplitude, and phase relations of harmonic variables.'''
+
 st.divider()
 st.subheader("What is the principle of Lissajous pattern?")
-st.text("The Lissajous pattern indicates the phase difference by the shape of the X-Y plot. A straight line indicates a 0º or 180º phase difference.\nThe angle of the line depends on the difference in amplitude between the two signals, a line at 45º to the horizontal means the amplitudes are equal.")
+multi ='''The Lissajous pattern indicates the phase difference by the shape of the X-Y plot.
+A straight line indicates a 0º or 180º phase difference.The angle of the line depends on the 
+difference in amplitude between the two signals, a line at 45º to the horizontal means the amplitudes are equal.'''
 st.divider()
 def lissajous(t, A, B, a, b, delta):
     x = A * np.sin(a * t)
